@@ -1,5 +1,3 @@
-# allabout-laravel-docker
-
 ## Create laravel file
 $ composer create-project --prefer-dist laravel/laravel laravel-app "^6.2"  
 
