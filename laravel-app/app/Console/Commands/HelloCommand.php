@@ -11,14 +11,17 @@ class HelloCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'hello:class'; // コマンド名
-
+    // protected $signature = 'hello:class {name}';
+    // protected $signature = 'hello:class {--switch}';
+    protected $signature = 'hello:class';
+    
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'sample command (class)'; //コマンドの説明
+    // protected $description = 'sample command (class)'; //コマンドの説明
+    protected $description = 'sample command (class)';
 
     /**
      * Create a new command instance.
@@ -37,6 +40,11 @@ class HelloCommand extends Command
      */
     public function handle() // コマンドの実行内容
     {
-        $this->comment('Hello class command');
+        // $name = $this->argument('name');
+        // $this->comment('Hello '.$name);
+        // $this->comment('Hello class command');
+        // $switch = $this->option('switch');
+        // $this->comment('Hello '.($switch ? 'ON' : 'OFF'));
+        return view('welcome');
     }
 }
