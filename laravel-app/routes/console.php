@@ -16,3 +16,7 @@ use Illuminate\Foundation\Inspiring;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+Artisan::command('hello:clousure',function(){
+    $this->comment('Hello clousure command'); //文字列出力
+})->describe('sample command');               //コマンド説明
