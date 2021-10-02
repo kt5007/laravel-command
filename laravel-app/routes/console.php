@@ -19,4 +19,4 @@ Artisan::command('inspire', function () {
 
 Artisan::command('hello:clousure',function(){
     $this->comment('Hello clousure command'); //文字列出力
-})->describe('sample command');               //コマンド説明
+})->describe('sample command(clousure)');               //コマンド説明
